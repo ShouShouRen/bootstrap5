@@ -187,11 +187,38 @@
         <hr>
         <h2>Basic Collapsible</h2>
         <p>Collapsibles are useful when you want to hide and show large amount of content:</p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Simple collapsible</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Simple
+            collapsible</button>
         <div id="demo" class="collapse">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        <hr>
+        <p>
+            Example Explained
+            The .collapse class indicates a collapsible element (a div in our example); this is the content that will be
+            shown or hidden with a click of a button.
+            To control (show/hide) the collapsible content, add the data-bs-toggle="collapse" attribute to an a or a
+            button element. Then add the data-bs-target="#id" attribute to connect the button with the collapsible
+            content (div id="demo").
+            Note: For a elements, you can use the href attribute instead of the data-bs-target attribute:
+        </p>
+        <h2>Example</h2>
+        <a href="#demo-2" class="btn btn-primary" data-bs-toggle="collapse">Simple collapsible</a>
+        <div id="demo-2" class="collapse">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        <hr>
+        <p>By default, the collapsible content is hidden. However, you can add the .show class to show the content by
+            default:</p>
+        <a href="#demo-3" class="btn btn-primary" data-bs-toggle="collapse">Simple collapsible</a>
+        <div class="collapse show" id="demo-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatum, quis ipsum quae modi incidunt,
+            beatae ratione explicabo inventore, pariatur quam! Dolorem similique rerum provident excepturi ex commodi,
+            laudantium error!
         </div>
     </div>
 </body>
