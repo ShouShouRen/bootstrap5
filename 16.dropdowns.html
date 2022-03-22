@@ -27,7 +27,8 @@
         </div>
         <hr>
         <h2>Dropdown Divider</h2>
-        <p>The .dropdown-divider class is used to separate links inside the dropdown menu with a thin horizontal border:帶有水平線的下拉是選單</p>
+        <p>The .dropdown-divider class is used to separate links inside the dropdown menu with a thin horizontal
+            border:帶有水平線的下拉是選單</p>
         <div class="dropdown">
             <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
                 Dropdown button
@@ -36,7 +37,9 @@
                 <li><a class="dropdown-item" href="#">Link 1</a></li>
                 <li><a class="dropdown-item" href="#">Link 2</a></li>
                 <li><a class="dropdown-item" href="#">Link 3</a></li>
-                <li><hr class="dropdown-divider"></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
                 <li><a class="dropdown-item" href="#">Another link</a></li>
             </ul>
         </div>
@@ -48,18 +51,92 @@
                 Dropdown button
             </button>
             <ul class="dropdown-menu">
-                <li><h5 class="dropdown-header">Dropdown header 1</h5></li>
+                <li>
+                    <h5 class="dropdown-header">Dropdown header 1</h5>
+                </li>
                 <li><a class="dropdown-item" href="#">Link 1</a></li>
                 <li><a class="dropdown-item" href="#">Link 2</a></li>
                 <li><a class="dropdown-item" href="#">Link 3</a></li>
-                <li><h5 class="dropdown-header">Dropdown header 2</h5></li>
+                <li>
+                    <h5 class="dropdown-header">Dropdown header 2</h5>
+                </li>
                 <li><a class="dropdown-item" href="#">Another link</a></li>
             </ul>
         </div>
         <hr>
         <h2>Disable and Active items</h2>
         <p>Highlight a specific dropdown item with the .active class (add a blue background color).</p>
-        <p>To disable an item in the dropdown menu, use the .disabled class (gets a light-grey text color and a "no-parking-sign" icon on hover):</p>
+        <p>To disable an item in the dropdown menu, use the .disabled class (gets a light-grey text color and a
+            "no-parking-sign" icon on hover):</p>
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Normal</a></li>
+                <li><a class="dropdown-item active" href="#">Active</a></li>
+                <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+            </ul>
+        </div>
+        <hr>
+        <h2>Dropdown Position</h2>
+        <p>You can also create a "dropend" or "dropstart" menu, buy adding the .dropend or .dropostart class to the
+            dropdown element. Note that the caret / arrow is added automatically:</p>
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Dropend</h2>
+                <div class="dropdown dropend">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                        Dropend
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Normal</a></li>
+                        <li><a class="dropdown-item active" href="#">Active</a></li>
+                        <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2>Dropend</h2>
+                <div class="dropdown dropstart">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                        Dropstart
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Normal</a></li>
+                        <li><a class="dropdown-item active" href="#">Active</a></li>
+                        <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h2>Dropdown Menu Right</h2>
+        <p>To right-align the dropdown menu,add the .dropdown-menu-end class to the element width .dropdown-menu:</p>
+        <div class="dropdown dropdown-menu-end">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                Wide dropdown button to demonstrate this example
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                <li><a class="dropdown-item" href="#">Link 3</a></li>
+            </ul>
+        </div>
+        <hr>
+        <h2>Dropup</h2>
+        <p>If you want the dropdown menu to expand upwards instead of downwards, change the div element wiht
+            class="dropdown" to "dropup":</p>
+        <div class="dropup">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                Dropup button
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                <li><a class="dropdown-item" href="#">Link 3</a></li>
+            </ul>
+        </div>
     </div>
 </body>
 
